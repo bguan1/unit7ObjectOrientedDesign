@@ -19,7 +19,7 @@ public class DeckTester {
 		System.out.println("  size: " + d.size());
 		System.out.println();
 		System.out.println();
-
+		
 		System.out.println("**** Deal a Card ****");
 		System.out.println("  deal: " + d.deal());
 		System.out.println();
@@ -31,6 +31,14 @@ public class DeckTester {
 		System.out.println("  size: " + d.size());
 		System.out.println();
 		System.out.println();
+		
+		System.out.println("**** Shuffle the Deck ****");
+		System.out.println(" original deck: " + d.toString());
+		d.shuffle();
+		System.out.println(" shuffled deck: " + d.toString());
+		System.out.println();
+		System.out.println();
+
 
 		System.out.println("**** Deal Remaining 5 Cards ****");
 		for (int i = 0; i < 5; i++) {
@@ -50,7 +58,5 @@ public class DeckTester {
 		System.out.println("  deal: " + d.deal());
 		System.out.println();
 		System.out.println();
-
-		/* *** TO BE COMPLETED IN ACTIVITY 4 *** */
 	}
 }
